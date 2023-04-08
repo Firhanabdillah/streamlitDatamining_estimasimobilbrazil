@@ -72,9 +72,9 @@ with st.form("my_form"):
 
     i_km = st.sidebar.text_input('Kilometer', '10550')
 
-    i_fabricante = st.sidebar.selectbox('Fabricante', sorted( df.fabricante.unique() ) )
+    i_fabricante = st.sidebar.selectbox('Pabrikan', sorted( df.fabricante.unique() ) )
 
-    i_cat = st.sidebar.selectbox('Modelo', sorted( df.car[df.fabricante == i_fabricante].unique() ) )
+    i_cat = st.sidebar.selectbox('Model', sorted( df.car[df.fabricante == i_fabricante].unique() ) )
     i_cat = df.categoria[df.car == i_cat].values[0]
 
 
