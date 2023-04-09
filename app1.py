@@ -78,7 +78,7 @@ with st.form("my_form"):
     i_cat = df.categoria[df.car == i_cat].values[0]
 
 
-    i_combustivel = st.sidebar.selectbox('Tipo de Combustível', df.combustivel.unique() )
+    i_combustivel = st.sidebar.selectbox('Jenis bahan bakar', df.combustivel.unique() )
 
     i_anunciante = st.sidebar.radio('Pilih Pembelian :',
                                     ('Individu', 'Perusahaan', 'Deealer') )
